@@ -1,0 +1,9 @@
+package com.example.agile.app
+
+import retrofit2.Call
+import retrofit2.http.GET
+
+interface ApiService {
+    @GET("riwayat")
+    fun getRiwayat(): Call<ResponseModel>
+}
